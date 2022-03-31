@@ -342,7 +342,8 @@
                             <input type="email" placeholder="Email" class="standart-input">
                             <input type="tel" placeholder="Phone" class="standart-input">
                             <select name="tickets-select" id="tickets-select" class="standart-input">
-                                <option value="" selected>Permanent exhibition</option>
+                                <option value="" disabled selected>Ticket Type</option>
+                                <option value="">Permanent exhibition</option>
                                 <option value="">Temporary exhibition</option>
                                 <option value="">Combined Admission</option>
                             </select>
@@ -466,7 +467,7 @@
                                 <button class="add number-ticket" type="button"
                                     onclick="this.previousElementSibling.stepUp()">+</button>
                             </div>
-                            <h5 id="total">Total €220</h5>
+                            <h5 id="total"><span>Total</span> <span>€</span><span>220</span></h5>
                             <button id="buy-now">Buy Now</button>
                         </div>
                         <!-- </div>     -->
