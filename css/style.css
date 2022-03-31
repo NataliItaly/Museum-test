@@ -59,7 +59,6 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  border: 1px solid transparent;
   position: relative;
   height: 100%;
   padding-top: 75px;
@@ -180,15 +179,14 @@ main {
   height: 810px;
 }
 .wellcome .container {
-  padding-top: 0;
+  padding-top: 150px;
   padding-bottom: 0;
 }
 
 .wellcome-text {
   width: 598px;
   height: 388px;
-  margin-top: 150px;
-}
+ }
 
 .section-title {
   font-family: Forum;
@@ -225,7 +223,7 @@ main {
   z-index: 2;
 }
 
-.wellcome-text a {
+.discover-btn {
   width: 360px;
   height: 75px;
   background: var(--color-red);
@@ -247,7 +245,7 @@ main {
   z-index: 2;
 }
 
-.wellcome-text a:hover {
+.discover-btn:hover {
   background-color: #866335;
 }
 
@@ -951,9 +949,11 @@ main {
   display: flex;
   width: 100%;
   gap: 36px;
+  height: fit-content;
 }
 
 .gallery-column {
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -976,6 +976,12 @@ main {
   bottom: 0;
   z-index: 1;
 }
+
+.gallery .discover-btn {
+  display: none;
+}
+
+/*--------------------------------tickets---------------------------------*/
 
 .tickets {
   background-color: var(--color-white);

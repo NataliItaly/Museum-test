@@ -1,3 +1,5 @@
+
+
 @media (max-width: 1440px) {
   .container {
     padding-left: 10px;
@@ -201,7 +203,7 @@
   }
   .wellcome .section-title.active,
   .wellcome-text p.active,
-  .wellcome-text a.active {
+  .discover-btn.active {
     opacity: 0;
   }
   .wellcome {
@@ -219,7 +221,7 @@
     font-size: 24px;
     line-height: 28px;
   }
-  .wellcome-text a {
+  .discover-btn {
     width: 300px;
     height: 60px;
     font-size: 20px;
@@ -424,13 +426,9 @@
     margin-bottom: 60px;
   }
   .gallery-block {
-    width: 984px;
     height: auto;
   }
-
-  .gallery-inner-block {
-    max-height: 1828px;
-  }
+  
   .tickets-block {
     width: 100%;
     height: auto;
@@ -741,7 +739,7 @@
     font-size: 20px;
     line-height: 23px;
   }
-  .wellcome-text a {
+  .discover-btn {
     display: none;
   }
   .image-slider {
@@ -914,16 +912,14 @@
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .gallery-img {
-    width: 352px;
+  .gallery-third-column {
+    display: none;
   }
   .gallery-block {
-    max-width: 767px;
-    height: fit-content;
+        height: fit-content;
   }
-  .gallery-inner-block {
-    max-width: 728px;
-    height: 2600px;
+  .rectangle {
+    height: 120px;
   }
   .parallax {
     margin: 0 auto;
@@ -1263,9 +1259,7 @@
   .image-slider_fraction {
     font-size: 16px;
     line-height: 40px;
-    /* left: 69px;
-    bottom: 20px; */
-  }
+      }
   .prev-next {
     width: 50px;
   }
@@ -1325,6 +1319,28 @@
   }
   .explore .section-title::after {
     top: 86px;
+  }
+  .gallery-inner-block {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .gallery-second-column {
+    display: none;
+  }
+
+  .visible {
+    display: flex;
+  }
+  
+  .gallery .discover-btn {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+    .rectangle {
+    background: linear-gradient(to top, var(--color-black) 53%, rgba(0, 0, 0, 0));
+    height: 250px;
   }
   .contacts .section-title::after {
     top: 52px;
