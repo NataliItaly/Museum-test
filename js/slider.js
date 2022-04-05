@@ -10,8 +10,9 @@ let myImageSlider = new Swiper('.image-slider', {
         el: '.swiper-pagination',
         clickable: true,
     },
+    loop: true
 });
-   
+
 let mySliderAllSlides = document.querySelector('.image-slider_total');
 let mySliderCurrentSlide = document.querySelector('.image-slider_current');
 

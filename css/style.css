@@ -517,6 +517,30 @@ main {
 
 /*---------------------------------explore-----------------------------*/
 
+.ratio {
+  width: 720px;
+  /* здесь можно установить любую нужную ширину */
+  height: 700px;
+  margin-top: 15px;
+}
+
+.ratio-inner {
+  position: relative;
+  height: 0;
+  border: none;
+  padding-top: 97%;
+  /* 100% ширины  */
+}
+
+.ratio-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #eee;
+}
+
 .explore {
   background-color: var(--color-black);
 }
@@ -526,7 +550,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 75px;
-  column-gap: 60px;
+    column-gap: 60px;
 }
 
 .explore-text {
@@ -541,21 +565,30 @@ main {
 }
 
 .explore .section-title {
-  margin-bottom: 100px;
+  margin-bottom: 104px;
   width: 100%;
+}
+
+.explore .section-title::after {
+  top: 115px;
 }
 
 .explore-text {
   max-width: 660px;
 }
 
-.photos {
+.explore-text p {
+  max-width: 620px;
+  margin-bottom: 25px;
+}
+
+/* .photos {
   position: relative;
   margin-top: 15px;
   max-width: 720px;
   height: 700px;
   width: 720px;
-}
+} */
 .photo {
   position: absolute;
   width: 100%;
@@ -606,8 +639,7 @@ main {
 .video-text {
   display: flex;
   flex-direction: row;
-  margin-top: 75px;
-  width: 720px;
+    width: 720px;
   width: 100%;
   /* height: 90px; */
 }
@@ -626,6 +658,16 @@ main {
 .video-text .section-title {
   margin-top: 0;
   width: 50%;
+}
+
+.video-slider {
+  margin-top: 74px;
+  width: 100%;
+  height: 735px;
+}
+
+.video-slider_wrapper {
+  width: 100%;
 }
 
 .video-screen {
@@ -1264,7 +1306,7 @@ main {
 .close {
   position: absolute;
   top: 30px;
-  right: 30px;
+  right: 12px;
   text-decoration: none;
   width: 25px;
   height: 25px;
@@ -1313,7 +1355,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 22;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -1556,7 +1598,7 @@ main {
   border: 1px solid var(--color-black);
   box-sizing: border-box;
   padding-left: 30px;
-  padding-right: 30px;
+  padding-right: 25px;
   padding-top: 25px;
   padding-bottom: 26px;
   position: relative;
@@ -1686,7 +1728,7 @@ main {
 }
 
 .face {
-  margin-top: 10px;
+  margin-top: 7px;
   z-index: 1;
   background: #bcbcbc;
   padding-left: 20px;
@@ -1727,11 +1769,7 @@ main {
   background: var(--color-white);
   border: 0.5px solid #a4a4a3;
   margin-top: 2px;
-  margin-bottom: 10px;
-}
-
-.middle-p {
-  margin-top: 0px;
+  margin-bottom: 2px;
 }
 
 .cartholder-p {
@@ -1759,12 +1797,16 @@ main {
   height: 35px;
   background: var(--color-white);
   border: 0.567px solid #a4a4a3;
-  margin-top: 2px;
+  margin-top: 4px;
+}
+
+.total-item:first-of-type {
+  margin-bottom: 4px;
 }
 
 .retro {
   position: absolute;
-  right: -5px;
+  right: -2px;
   top: 30px;
   background: #939393;
   height: 213px;

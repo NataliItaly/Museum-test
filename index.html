@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/video-slider.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -105,8 +106,6 @@
                         </div>
                     </div>
 
-                    <div class="gradient-frame"></div>
-
                     <div class="slider-control">
                         <div class="slider-control-wrapper">
                             <div class="image-slider_fraction">
@@ -181,11 +180,16 @@
                     <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but
                         because it looked different.</p>
                 </div>
-                <div class="photos">
-                    <div class="photo"></div>
-                    <div class="photo-original"></div>
-                    <div class="separator"></div>
+                <div class="ratio">
+                    <div class="ratio-inner">
+                        <div class="photos ratio-content">
+                            <div class="photo"></div>
+                            <div class="photo-original"></div>
+                            <div class="separator"></div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -196,84 +200,67 @@
                     <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona
                         Lisa or Hammurabi's Code</p>
                 </div>
-                <div class="video-screen">
-                    <iframe width="1440" height="735" class="main-screen"
-                        src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="video-control">
-                    <div class="control-item">
-                        <button class="play"><img src="assets/svg/control-play.svg" alt=""></button>
-                    </div>
-                    <div class="control-item">
-                        <input type="range" value="50" min="0" max="100" step="1" class="play-scroll">
-                    </div>
-                    <div class="control-item">
-                        <img src="assets/svg/control-trumpet.svg" alt="volume" class="trumpet">
-                        <img src="assets/svg/control-volume1.svg" alt="volume" class="trumpet">
-                        <img src="assets/svg/control-volume2.svg" alt="volume" class="trumpet">
-                    </div>
-                    <div class="control-item">
-                        <input type="range" value="50" min="0" max="100" step="1" class="volume-scroll">
 
-                    </div>
-                    <div class="control-item">
-                        <img src="assets/svg/frame.svg" alt="frame">
-                    </div>
-                </div>
-                <div class="you_tube">
-                    <div class="you_tube-item">
-                        <div class="up-row">
-                            <img src="assets/svg/mona_lisa_logo.svg" alt="Mona Lisa">
-                            <p class="you_tube-text">Exposition - Le Corps et l’Ame. De Dona...</p>
-                            <div class="points">
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                <div class="video-slider swiper-container">
+                    <div class="video-slider_wrapper swiper-wrapper">
+                        <div data-hash="video-1" class="video-slider_slide swiper-slide">
+                            <div class="video-slider_image">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
-                        <div class="you_tube-play">
-                            <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI"
-                                class="screen-frame" title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="you_tube-item">
-                        <div class="up-row">
-                            <img src="assets/svg/mona_lisa_logo.svg" alt="Mona Lisa">
-                            <p class="you_tube-text">Au Louvre ! La Venus de Milo</p>
-                            <div class="points">
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        <div data-hash="slide-2" class="image-slider_slide swiper-slide">
+                            <div class="video-slider_image">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
-                        <div class="you_tube-play">
-                            <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
-                                class="screen-frame" title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="you_tube-item">
-                        <div class="up-row">
-                            <img src="assets/svg/mona_lisa_logo.svg" alt="Mona Lisa">
-                            <p class="you_tube-text">Promenade dans les collections mesop...</p>
-                            <div class="points">
-                                <div></div>
-                                <div></div>
-                                <div></div>
+                        <div data-hash="slide-3" class="image-slider_slide swiper-slide">
+                            <div class="video-slider_image">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
-                        <div class="you_tube-play">
-                            <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY"
-                                class="screen-frame" title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                        <div data-hash="slide-4" class="image-slider_slide swiper-slide">
+                            <div class="video-slider_image">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/aWmJ5DgyWPI"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div data-hash="slide-5" class="image-slider_slide swiper-slide">
+                            <div class="video-slider_image">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2OR0OCr6uRE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="slider-control">
+                        <div class="slider-control-wrapper">
+                            <div class="image-slider_fraction">
+                                <div class="image-slider_current">01</div>
+                                <div class="image-slider_separator">|</div>
+                                <div class="image-slider_total">1</div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="prev-next">
+                                <div class="swiper-button-prev"><img src="assets/svg/pages-left.svg" alt=""></div>
+                                <div class="swiper-button-next"><img src="assets/svg/pages-right.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="video-slider-page">
                     <img src="assets/svg/arrow_left.svg" alt="left">
@@ -605,10 +592,90 @@
             </div>
         </div>
         <div class="footer-line"></div>
+        <!-- <div class="video-screen">
+                            <iframe width="1440" height="735" class="main-screen"
+                                src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-control">
+                            <div class="control-item">
+                                <button class="play"><img src="assets/svg/control-play.svg" alt=""></button>
+                            </div>
+                            <div class="control-item">
+                                <input type="range" value="50" min="0" max="100" step="1" class="play-scroll">
+                            </div>
+                            <div class="control-item">
+                                <img src="assets/svg/control-trumpet.svg" alt="volume" class="trumpet">
+                                <img src="assets/svg/control-volume1.svg" alt="volume" class="trumpet">
+                                <img src="assets/svg/control-volume2.svg" alt="volume" class="trumpet">
+                            </div>
+                            <div class="control-item">
+                                <input type="range" value="50" min="0" max="100" step="1" class="volume-scroll">
+        
+                            </div>
+                            <div class="control-item">
+                                <img src="assets/svg/frame.svg" alt="frame">
+                            </div>
+                        </div>
+                        <div class="you_tube">
+                            <div class="you_tube-item">
+                                <div class="up-row">
+                                    <img src="assets/svg/mona_lisa_logo.svg" alt="Mona Lisa">
+                                    <p class="you_tube-text">Exposition - Le Corps et l’Ame. De Dona...</p>
+                                    <div class="points">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="you_tube-play">
+                                    <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI"
+                                        class="screen-frame" title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="you_tube-item">
+                                <div class="up-row">
+                                    <img src="assets/svg/mona_lisa_logo.svg" alt="Mona Lisa">
+                                    <p class="you_tube-text">Au Louvre ! La Venus de Milo</p>
+                                    <div class="points">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="you_tube-play">
+                                    <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
+                                        class="screen-frame" title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="you_tube-item">
+                                <div class="up-row">
+                                    <img src="assets/svg/mona_lisa_logo.svg" alt="Mona Lisa">
+                                    <p class="you_tube-text">Promenade dans les collections mesop...</p>
+                                    <div class="points">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="you_tube-play">
+                                    <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY"
+                                        class="screen-frame" title="YouTube video player"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div> -->
     </footer>
     <script src="https://kit.fontawesome.com/b867e2135f.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/video-slider.js"></script>
     <script src="js/booking.js"></script>
     <!--<script src="js/gallery.js"></script>-->
     <script src="js/ripple.js"></script>
