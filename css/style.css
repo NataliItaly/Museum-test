@@ -277,7 +277,7 @@ main {
   height: 100%;
   position: absolute;
   top: 0;
-  left: -3px;
+  left: 0px;
   background: transparent;
   background-image: linear-gradient(to right, #030303, transparent 294px);
   opacity: 1;
@@ -333,8 +333,8 @@ main {
   height: 100%;
   cursor: pointer;
   margin: 0;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .swiper-button-next img {
