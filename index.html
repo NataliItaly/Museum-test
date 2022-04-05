@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.css">
-    <link rel="stylesheet" href="css/video-slider.css">
+    <!-- <link rel="stylesheet" href="css/video-slider.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -113,7 +113,18 @@
                                 <div class="image-slider_separator">|</div>
                                 <div class="image-slider_total">1</div>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-pagination">
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                    role="button" aria-label="go to slide-1" aria-current="true"></span>
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="go to slide-2"></span>
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="go to slide-2"></span>
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="go to slide-2"></span>
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                    aria-label="go to slide-2"></span>
+                            </div>
                             <div class="prev-next">
                                 <div class="swiper-button-prev"><img src="assets/svg/pages-left.svg" alt=""></div>
                                 <div class="swiper-button-next"><img src="assets/svg/pages-right.svg" alt=""></div>
@@ -201,11 +212,11 @@
                         Lisa or Hammurabi's Code</p>
                 </div>
 
-                <div class="video-slider swiper-container">
-                    <div class="video-slider_wrapper swiper-wrapper">
+                <div class="video-slider video-swiper-container">
+                    <div class="video-slider_wrapper video-swiper-wrapper">
                         <div data-hash="video-1" class="video-slider_slide swiper-slide">
                             <div class="video-slider_image">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                                <iframe class="video-frame" src="https://www.youtube.com/embed/zp1BXPX8jcU"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
@@ -213,7 +224,7 @@
                         </div>
                         <div data-hash="slide-2" class="image-slider_slide swiper-slide">
                             <div class="video-slider_image">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
+                                <iframe class="video-frame" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
@@ -221,7 +232,7 @@
                         </div>
                         <div data-hash="slide-3" class="image-slider_slide swiper-slide">
                             <div class="video-slider_image">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY"
+                                <iframe class="video-frame" src="https://www.youtube.com/embed/NOhDysLnTvY"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
@@ -229,7 +240,7 @@
                         </div>
                         <div data-hash="slide-4" class="image-slider_slide swiper-slide">
                             <div class="video-slider_image">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/aWmJ5DgyWPI"
+                                <iframe class="video-frame" src="https://www.youtube.com/embed/aWmJ5DgyWPI"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
@@ -237,7 +248,7 @@
                         </div>
                         <div data-hash="slide-5" class="image-slider_slide swiper-slide">
                             <div class="video-slider_image">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2OR0OCr6uRE"
+                                <iframe class="video-frame" src="https://www.youtube.com/embed/2OR0OCr6uRE"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
@@ -245,32 +256,27 @@
                         </div>
                     </div>
 
-                    <div class="slider-control">
-                        <div class="slider-control-wrapper">
-                            <div class="image-slider_fraction">
-                                <div class="image-slider_current">01</div>
-                                <div class="image-slider_separator">|</div>
-                                <div class="image-slider_total">1</div>
+                    <div class="video-slider-control">
+                        <div class="video-slider-control-wrapper">
+                            <div class="video-swiper-pagination">
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
+                                <a href=""></a>
                             </div>
-                            <div class="swiper-pagination"></div>
-                            <div class="prev-next">
-                                <div class="swiper-button-prev"><img src="assets/svg/pages-left.svg" alt=""></div>
-                                <div class="swiper-button-next"><img src="assets/svg/pages-right.svg" alt=""></div>
+                            <div class="video-prev-next">
+                                <div class="video-swiper-button-prev"><img src="assets/svg/arrow_left.svg" alt="left">
+                                </div>
+                                <div class="video-swiper-button-next"><img src="assets/svg/arrow_right.svg" alt="right">
+                                </div>
                             </div>
                         </div>
                     </div>
 
 
                 </div>
-                <div class="video-slider-page">
-                    <img src="assets/svg/arrow_left.svg" alt="left">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <img src="assets/svg/arrow_right.svg" alt="right">
-                </div>
+
             </div>
         </section>
 
@@ -679,7 +685,7 @@
     <script src="js/booking.js"></script>
     <!--<script src="js/gallery.js"></script>-->
     <script src="js/ripple.js"></script>
-    <script src="js/video.js"></script>
+    <!-- <script src="js/video.js"></script> -->
     <script src="js/script.js"></script>
     <script src="js/separator.js"></script>
     <script src="js/gallery-discover.js"></script>
